@@ -5,10 +5,12 @@ import Parts from "./Parts/Parts";
 
 export default function Navbar() {
   return (
-    <div className="relative flex pt-[1.75%]">
+    <div className="relative flex pt-[35px]">
       <Logo/>
-      <Parts/>
-      <Language/>
+      {/* <div className="relative sm:flex"> */}
+        <Parts/>
+        <Language/>
+`      {/* </div> */}`
     </div>
   )
 }
