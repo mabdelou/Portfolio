@@ -2,7 +2,7 @@
 
 export default function ShortNavBar() {
     return (
-        <div className="relative block space-y-[10px] pt-[50px] mx-auto w-[100px] h-[100vh]">
+        <div className="relative overflow-hidden block space-y-[10px] pt-[50px] mx-auto w-[auto] h-[auto]">
             <div className="relative text-center text-[15px]">
                 HOME
             </div>

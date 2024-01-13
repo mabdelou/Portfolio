@@ -1,10 +1,10 @@
 @keyframes display_nb
 {
-    0%{right: -50px; opacity: 0;}
-    100%{right: 25px; opacity: 1;}
+    0%{width: 0px;}
+    100%{width: 100px;}
 }
 @keyframes close_nb
 {
-    0%{right: 25px; opacity: 1;}
-    100%{right: -150px; opacity: 0;}
+    0%{width: 100px;}
+    100%{width: 0px;}
 }

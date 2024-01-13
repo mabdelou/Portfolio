@@ -11,11 +11,13 @@ const Display = () =>
     if(ShortNavBar.style.display == "block")
     {
       ShortNavBar.style.display = "none";
+      // ShortNavBar.style.animation = "display_CreateStory 3s 1 forwards";
       DisplaySNB.style.right = "0px";
     }
     else
     {
       ShortNavBar.style.display = "block";
+      // ShortNavBar.style.animation = "display_CreateStory 3s 1 forwards";
       DisplaySNB.style.right = "75px";
     }
   }
