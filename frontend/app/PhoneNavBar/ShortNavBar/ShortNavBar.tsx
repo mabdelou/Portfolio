@@ -2,7 +2,7 @@
 
 export default function ShortNavBar() {
     return (
-        <div className="absolute block space-y-[10px] mx-auto w-[100px] h-[100vh] bg-[#666666]">
+        <div className="relative block space-y-[10px] mx-auto w-[100px] h-[100vh] bg-[#AAAAAA]">
             <div className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
                 HOME
             </div>
