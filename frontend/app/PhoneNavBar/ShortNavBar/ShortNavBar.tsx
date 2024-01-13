@@ -2,29 +2,29 @@
 
 export default function ShortNavBar() {
     return (
-        <div className="relative block space-y-[10px] mx-auto w-[100px] h-[100vh] bg-[#AAAAAA]">
-            <div className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
+        <div className="relative block space-y-[10px] pt-[50px] mx-auto w-[100px] h-[100vh]">
+            <div className="relative text-center text-[15px]">
                 HOME
             </div>
-            <div className="relative text-[#FC033D] text-[10px] sm:text-xs md:text-sm lg:text-base">
+            <div className="relative text-center text-[#FC033D] text-[15px]">
                 ABOUT
             </div>
-            <div className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
+            <div className="relative text-center text-[15px]">
                 SERVICE
             </div>
-            <div className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
+            <div className="relative text-center text-[15px]">
                 PORTFOLIO
             </div>
-            <div className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
+            <div className="relative text-center text-[15px]">
                 RESUME
             </div>
-            <div className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
+            <div className="relative text-center text-[15px]">
                 BLOG
             </div>
-            <div className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
+            <div className="relative text-center text-[15px]">
                 CONTENT
             </div>
-            <div className="relative flex pt-[0.5vh] mr-[2.5vw] space-x-[1vw] text-[10px]">
+            <div className="relative flex pt-[0.5vh] space-x-[1vw] text-[10px] w-[50px] mx-auto">
                 <div className="relative">
                     AR
                 </div>
