@@ -13,9 +13,11 @@ export default function PhoneNavBar() {
       const ShortNavBar = document.getElementById('ShortNavBar');
       const DisplaySNB = document.getElementById('DisplaySNB');
       if(window.innerWidth >= 640 && ShortNavBar && DisplaySNB)
+      {
         ShortNavBar.style.display = "none";
-        // DisplaySNB.style.right = "25px";
-    },1000);
+        DisplaySNB.style.right = "0px";
+      }
+    },250);
     return ()=>
     {
       clearInterval(interval);
