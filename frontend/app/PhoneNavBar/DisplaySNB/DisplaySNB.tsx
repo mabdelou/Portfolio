@@ -19,8 +19,6 @@ const Display = () =>
       DisplaySNB.style.right = "75px";
     }
   }
-
-
 }
 
 
@@ -28,7 +26,7 @@ export default function DisplaySNB() {
     return (
       <button
         id="DisplaySNB"
-        className="fixed sm:hidden top-[10px] w-[25px] right-[0px] h-[25px] bg-[#FC033D] rounded-md z-40"
+        className="fixed sm:hidden top-[10px] w-[25px] right-[0px] h-[25px] bg-[#666666] rounded-md z-40"
         onClick={()=>{Display();}}>
       </button>
     );
