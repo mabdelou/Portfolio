@@ -2,7 +2,7 @@
 
 export default function Parts() {
   return (
-    <div className="relative sm:flex sm:space-x-[2.5vw] sm:mx-auto">
+    <div className="relative hidden sm:flex space-x-[2.5vw] mx-auto">
       <div className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
         HOME
       </div>
