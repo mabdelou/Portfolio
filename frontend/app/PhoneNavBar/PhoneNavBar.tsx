@@ -10,11 +10,11 @@ export default function PhoneNavBar() {
   useEffect(()=>
   {
     const interval = setInterval(()=>{
-      const ShortNavBar = document.getElementById('ShortNavBar');
+      const ShortNavBarID = document.getElementById('ShortNavBarID');
       const DisplaySNB = document.getElementById('DisplaySNB');
-      if(window.innerWidth >= 640 && ShortNavBar && DisplaySNB)
+      if(window.innerWidth >= 640 && ShortNavBarID && DisplaySNB)
       {
-        ShortNavBar.style.display = "none";
+        ShortNavBarID.style.display = "none";
         DisplaySNB.style.right = "0px";
       }
     },250);
@@ -26,7 +26,7 @@ export default function PhoneNavBar() {
   return (
       <div>
         <DisplaySNB/>
-        <div id="ShortNavBar" className="fixed hidden w-[100px] h-[100vh] bg-[#CCCCCC] top-[0px] right-[0px] z-30">
+        <div id="ShortNavBarID" className="fixed hidden w-[100px] h-[100vh] bg-[#CCCCCC] top-[0px] right-[0px] z-30">
           <ShortNavBar/>
         </div>
       </div>

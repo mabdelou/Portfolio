@@ -1,10 +1,33 @@
 @keyframes display_nb
 {
-    0%{width: 0px;}
-    100%{width: 100px;}
+    0%{width: 0px;display:none;}
+    100%{width: 100px;display:block;}
 }
 @keyframes close_nb
 {
-    0%{width: 100px;}
-    100%{width: 0px;}
+    0%{width: 100px;display:block;}
+    100%{width: 0px;display:none;}
+}
+
+
+@keyframes show_context
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes hide_context
+{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes move_button_I
+{
+    0%{right: 0px;}
+    100%{right: 75px;}
+}
+@keyframes move_button_II
+{
+    0%{right: 75px;}
+    100%{right: 0px;}
 }
