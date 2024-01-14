@@ -20,14 +20,3 @@
     0%{opacity: 1;}
     100%{opacity: 0;}
 }
-
-@keyframes move_button_I
-{
-    0%{right: -125px;}
-    100%{right: 0px;}
-}
-@keyframes move_button_II
-{
-    0%{right: 0px;}
-    100%{right: -125px;}
-}

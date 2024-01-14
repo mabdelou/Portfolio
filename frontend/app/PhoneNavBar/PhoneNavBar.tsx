@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react';
-
 import DisplaySNB from "./DisplaySNB/DisplaySNB";
-import ShortNavBar from "./ShortNavBar/ShortNavBar";
+import ShortNavBar, {Close} from "./ShortNavBar/ShortNavBar";
+import '/app/PhoneNavBar/Style/Style.css'
 
 export default function PhoneNavBar() {
   // const [NumberOfRenders, setNumberOfRenders] = useState<number>(0);
@@ -11,13 +11,9 @@ export default function PhoneNavBar() {
   {
     const interval = setInterval(()=>{
       const ShortNavBarID = document.getElementById('ShortNavBarID');
-      const DisplaySNB = document.getElementById('DisplaySNB');
-      if(window.innerWidth >= 640 && ShortNavBarID && DisplaySNB)
-      {
-        ShortNavBarID.style.display = "none";
-        DisplaySNB.style.right = "0px";
-      }
-    },250);
+      if(window.innerWidth >= 640 && ShortNavBarID)
+        Close();
+    },500);
     return ()=>
     {
       clearInterval(interval);

@@ -19,7 +19,7 @@ const Display = () =>
 export default function DisplaySNB() {
     return (
       <button
-        className="fixed sm:hidden top-[calc((100vh-75px)/2)] w-[7.5px] right-[0px] h-[75px] bg-[#FC033D] rounded-l-md z-30"
+        className="fixed sm:hidden top-[calc((100vh-75px)/2)] w-[10px] h-[75px] right-[0px] bg-[#FC033D] rounded-l-md z-30"
         onClick={()=>{Display();}}>
       </button>
     );

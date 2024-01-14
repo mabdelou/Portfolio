@@ -2,7 +2,7 @@
 
 import '/app/PhoneNavBar/Style/Style.css'
 
-const Display = () =>
+export const Close = () =>
 {
   const ShortNavBarID = document.getElementById('ShortNavBarID');
   const SNBContent = document.getElementById('SNBContent');
@@ -21,7 +21,7 @@ export default function ShortNavBar() {
         <div className="relative overflow-hidden block mx-auto space-y-[25px] w-[auto] h-[auto] rounded-tl-lg">
             <button
                     className="relative w-[25px] h-[25px] rounded-br-md bg-[#666666] text-[#E5ECF1]"
-                    onClick={()=>{Display();}}>
+                    onClick={()=>{Close();}}>
                 X
             </button>
             <div id="SNBContent" className="relative block space-y-[15px] mx-auto w-[auto] h-[auto]">
