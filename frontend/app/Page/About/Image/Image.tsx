@@ -2,7 +2,7 @@
 
 export default function Image() {
   return (
-    <div className="relative sm:block w-[100vw] sm:w-[50vw] h-[calc(100vh-50px)] sm:h-[50vh]">
+    <div className="relative overflow-hidden sm:block w-[100vw] sm:w-[50vw] h-[50vh] sm:h-[calc(100vh-50px)]">
       <img
         src="/photographII.png"
         alt="photograph"
