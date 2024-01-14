@@ -3,7 +3,7 @@ import DButton from "../DButton/DButton";
 
 export default function Info_() {
   return (
-    <div className="relative text-[10px] sm:text-[15px] md:text-[15px] lg:text-[20px] w-[50vw] h-[750px]">
+    <div className="relative text-[10px] sm:text-[15px] md:text-[15px] lg:text-[20px] w-[50vw] h-[calc(100vh-50px)]">
       <div className="relative  w-[200px] sm:w-[300px] md:w-[300px] lg:w-[450px] h-[auto] mx-auto pt-[calc((100vh-290px)/2)]">
         <div className="relative flex w-[auto] h-[auto]">
           <div className="relative w-[25px] h-[1px] bg-[#666666] top-[2vh]"></div>
