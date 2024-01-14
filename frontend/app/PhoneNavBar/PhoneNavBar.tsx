@@ -26,7 +26,7 @@ export default function PhoneNavBar() {
   return (
       <div>
         <DisplaySNB/>
-        <div id="ShortNavBarID" className="fixed hidden w-[100px] h-[100vh] bg-[#CCCCCC] top-[0px] right-[0px] z-30">
+        <div id="ShortNavBarID" className="fixed hidden w-[100px] h-[100vh] bg-[#CCCCCC] top-[50px] right-[0px] z-40">
           <ShortNavBar/>
         </div>
       </div>
