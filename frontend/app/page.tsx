@@ -4,7 +4,7 @@ import PhoneNavBar from './PhoneNavBar/PhoneNavBar';
 
 export default function Main() {
   return (
-    <main className="relative overflow-hidden bg-[#E5ECF1] text-[#666666] text-[15px] w-[100vw] h-[calc((750px*7)+700px+85px)]">
+    <main className="relative overflow-hidden bg-[#E5ECF1] text-[#666666] text-[15px] w-[100vw] h-[calc((750px*7)+50px)]">
         <Navbar/>
         <PhoneNavBar/>
         <Page/>

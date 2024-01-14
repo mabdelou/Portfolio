@@ -9,7 +9,7 @@ import Portfolio from "./Portfolio/Portfolio";
 
 export default function Page() {
   return (
-    <div className="relative w-[100vw] h-[calc((750px*7)+700px)]">
+    <div className="relative w-[100vw] h-[calc(750px*7)]">
         <About/>
         <Home/>
         <Service/>
