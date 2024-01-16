@@ -1,29 +1,79 @@
+'use client'
+
+import { useEffect } from 'react';
+import '/app/Page/Style/Style.css'
 
 
 export default function Home() {
+
+  useEffect(()=>
+  {
+    let elem = 0;
+    let isAnimating = false;
+    const Parrent =  document.getElementById('home_scroll');
+    const interval = setInterval(()=>
+    {
+      if(isAnimating)
+        return ;
+      startAnimation(`Scroll_${elem++ % 3} 1.5s 1 forwards`);
+      for(let a=0;a<3;a++)
+      {
+        const b = document.getElementById(`home_circle_${a+1}`);
+
+        if(b && a == elem % 3)
+        {
+          console.log("here");
+          b.style.scale = "1.5";
+          b.style.background = "#FC033D";
+        }
+        else if(b)
+        {
+          b.style.scale = "1";
+          b.style.background = "#666666";
+        }
+      }
+    },3000);
+    function startAnimation(animationName: string)
+    {
+      if(!Parrent)
+        return;
+
+      isAnimating = true;
+      Parrent.style.animation = animationName;
+      Parrent.addEventListener('animationend', AnimationEnded);
+    }
+    
+    function AnimationEnded()
+    {
+      if(!Parrent)
+        return;
+      isAnimating = false;
+      Parrent.removeEventListener('animationend', AnimationEnded);
+    }
+  },[]);
   return (
     <div className="relative ">
-      <div className="relative flex w-[300vw] h-[100vh] bg-[#E5ECF1]">
-        <div className="relative flex items-center justify-center  w-[100vw] h-[100vh]">
-          <p className="text-center  text-[300px]  font-black">
+      <div id="home_scroll" className="relative flex w-[300vw] h-[calc(100vh-100px)] bg-[#E5ECF1]">
+        <div className="relative  w-[100vw] h-[calc(100vh-100px)]">
+          <p className="text-center top-1/2 transform translate-y-1/2 text-[200px]  font-black">
             DESIGNER
           </p>
         </div>
-        <div className="relative w-[100vw] h-[100vh] text-center text-[300px] font-black">
-          <p className="text-center  text-[300px]  font-black">
+        <div className="relative  w-[100vw] h-[calc(100vh-100px)]">
+          <p className="text-center top-1/2 transform translate-y-1/2  text-[200px]  font-black">
             DEVELOPER
           </p>
         </div>
-        <div className="relative w-[100vw] h-[100vh] text-center text-[300px] font-black">
-          <p className="text-center  text-[300px]  font-black">
+        <div className="relative  w-[100vw] h-[calc(100vh-100px)]">
+          <p className="text-center top-1/2 transform translate-y-1/2  text-[200px]  font-black">
             PROGRAMMER
           </p>
         </div>
       </div>
-      <div className="absolute flex items-center justify-center space-x-[50px] left-1/2 -translate-x-1/2 bottom-[5vh] w-[250px] h-[75px]">
-        <div className="relative w-[20px] h-[20px] bg-[#FC033D] rounded-3xl"></div>
-        <div className="relative w-[20px] h-[20px] bg-[#666666] rounded-3xl"></div>
-        <div className="relative w-[20px] h-[20px] bg-[#666666] rounded-3xl"></div>
+      <div className="relative flex items-center justify-center space-x-[50px] mx-auto w-[100vw] h-[50px]">
+        <div id="home_circle_1" className="relative w-[10px] h-[10px] bg-[#FC033D] rounded-3xl"></div>
+        <div id="home_circle_2" className="relative w-[10px] h-[10px] bg-[#666666] rounded-3xl"></div>
+        <div id="home_circle_3" className="relative w-[10px] h-[10px] bg-[#666666] rounded-3xl"></div>
       </div>
     </div>
   )
