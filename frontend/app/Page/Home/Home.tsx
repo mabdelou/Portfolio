@@ -22,7 +22,6 @@ export default function Home() {
 
         if(b && a == elem % 3)
         {
-          console.log("here");
           b.style.scale = "1.5";
           b.style.background = "#FC033D";
         }
@@ -54,18 +53,21 @@ export default function Home() {
   return (
     <div className="relative ">
       <div id="home_scroll" className="relative flex w-[300vw] h-[calc(100vh-100px)] bg-[#E5ECF1]">
-        <div className="relative  w-[100vw] h-[calc(100vh-100px)]">
-          <p className="text-center top-1/2 transform translate-y-1/2 text-[200px]  font-black">
+        <div className="relative w-[100vw] h-[calc(100vh-100px)]">
+          <p className="text-center text-container  text-transparent  bg-[url('/1.jpeg')] bg-clip-text top-1/2 transform
+            translate-y-1/2  text-[200px]  font-black">
             DESIGNER
           </p>
         </div>
-        <div className="relative  w-[100vw] h-[calc(100vh-100px)]">
-          <p className="text-center top-1/2 transform translate-y-1/2  text-[200px]  font-black">
+        <div className="relative w-[100vw] h-[calc(100vh-100px)]">
+          <p className="text-center text-container  text-transparent  bg-[url('/1.jpeg')] bg-clip-text top-1/2 transform
+            translate-y-1/2  text-[200px]  font-black">
             DEVELOPER
           </p>
         </div>
-        <div className="relative  w-[100vw] h-[calc(100vh-100px)]">
-          <p className="text-center top-1/2 transform translate-y-1/2  text-[200px]  font-black">
+        <div className="relative w-[100vw] h-[calc(100vh-100px)]">
+          <p className="text-center text-container  text-transparent  bg-[url('/1.jpeg')] bg-clip-text top-1/2 transform
+            translate-y-1/2  text-[200px]  font-black">
             PROGRAMMER
           </p>
         </div>

@@ -40,6 +40,21 @@ export default function Page() {
         console.log("up "+floor);
         floor--;
       }
+      for(let a=0;a<7;a++)
+      {
+        const b = document.getElementById(`page_flore_${a+1}`);
+        const b1 = document.getElementById(`page_flore_s${a+1}`);
+        if(b && a == floor)
+        {
+          b.style.color = "#FC033D";
+          b1.style.color = "#FC033D";
+        }
+        else if(b)
+        {
+          b.style.color = "#666666";
+          b1.style.color = "#666666";
+        }  
+      }
     }
     function startAnimation(animationName: string)
     {
