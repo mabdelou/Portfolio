@@ -52,24 +52,24 @@ export default function Home() {
   },[]);
   return (
     <div className="relative ">
-      <div id="home_scroll" className="relative flex w-[300vw] h-[calc(100vh-100px)] bg-[#E5ECF1]">
-        <div className="relative bg-[url('/1.jpeg')] w-[100vw] h-[calc(100vh-100px)]">
-          <p className="text-center top-1/2 opacity-50 text-black transform translate-y-1/2  text-[200px]  font-black">
+      <div id="home_scroll" className="relative flex w-[300vw] h-[calc(100vh-50px)] bg-[#E5ECF1]">
+        <div className="relative bg-center bg-no-repeat bg-[url('/photo_of_designer_no_color.png')] w-[100vw] h-[calc(100vh-50px)]">
+          <p className="absolute opacity-65 text-black right-1/2 top-1/2  transform -translate-y-1/2  translate-x-1/2 text-[50px] sm:text-[150px] md:text-[175px]  font-black">
             DESIGNER
           </p>
         </div>
-        <div className="relative bg-[url('/3.jpeg')] w-[100vw] h-[calc(100vh-100px)]">
-          <p className="text-center top-1/2 opacity-50 text-black transform translate-y-1/2  text-[200px]  font-black">
+        <div className="relative bg-center bg-no-repeat bg-[url('/photo_of_devleoper_no_color.png')] w-[100vw] h-[calc(100vh-50px)]">
+          <p className="absolute opacity-65 text-black right-1/2 top-1/2  transform -translate-y-1/2  translate-x-1/2 text-[50px] sm:text-[150px] md:text-[175px]  font-black">
             DEVELOPER
           </p>
         </div>
-        <div className="relative bg-[url('/4.jpeg')] w-[100vw] h-[calc(100vh-100px)]">
-          <p className="text-center top-1/2 opacity-50 text-black transform translate-y-1/2  text-[200px]  font-black">
+        <div className="relative bg-center bg-no-repeat bg-[url('/photo_of_programmer_no_color.png')] w-[100vw] h-[calc(100vh-50px)]">
+          <p className="absolute opacity-65 text-black right-1/2 top-1/2  transform -translate-y-1/2  translate-x-1/2  text-[50px] sm:text-[100px] md:text-[150px] lg:text-[200px]  font-black">
             PROGRAMMER
           </p>
         </div>
       </div>
-      <div className="relative flex items-center justify-center space-x-[50px] mx-auto w-[100vw] h-[50px]">
+      <div className="absolute bottom-0 flex items-center justify-center space-x-[50px] mx-auto w-[100vw] h-[50px]">
         <div id="home_circle_1" className="relative w-[10px] h-[10px] bg-[#FC033D] rounded-3xl"></div>
         <div id="home_circle_2" className="relative w-[10px] h-[10px] bg-[#666666] rounded-3xl"></div>
         <div id="home_circle_3" className="relative w-[10px] h-[10px] bg-[#666666] rounded-3xl"></div>
