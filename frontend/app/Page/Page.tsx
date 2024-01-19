@@ -2,11 +2,9 @@
 
 import Home from "./Home/Home";
 import About from "./About/About";
-import Service from "./Service/Service";
-import Resume from "./Resume/Resume";
-import Blog from "./Blog/Blog";
-import Content from "./Content/Content";
-import Portfolio from "./Portfolio/Portfolio";
+import Service from "./Projects/Projects";
+import Skills from "./Skills/Skills";
+import Contact from "./Contact/Contact";
 import { useEffect, useState } from 'react';
 import '/app/Page/Style/Style.css'
 
@@ -28,7 +26,7 @@ export default function Page() {
       if(isAnimating)
         return ;
 
-      if (deltaY > 0 && Parrent && floor < 7)
+      if (deltaY > 0 && Parrent && floor < 4)
       {
         floor++;
         startAnimation(`Scroll_down_${floor} 3s 1 forwards`);
@@ -40,16 +38,16 @@ export default function Page() {
         console.log("up "+floor);
         floor--;
       }
-      for(let a=0;a<7;a++)
+      for(let a=0;a<4;a++)
       {
         const b = document.getElementById(`page_flore_${a+1}`);
         const b1 = document.getElementById(`page_flore_s${a+1}`);
-        if(b && a == floor)
+        if(b && b1 && a == floor)
         {
           b.style.color = "#FC033D";
           b1.style.color = "#FC033D";
         }
-        else if(b)
+        else if(b && b1)
         {
           b.style.color = "#666666";
           b1.style.color = "#666666";
@@ -76,14 +74,12 @@ export default function Page() {
     }
   },[]);
   return (
-    <div id="Parrent" className="relative w-[100vw] h-[700vh]">
+    <div id="Parrent" className="relative w-[100vw] h-[400vh]">
         <About/>
         <Home/>
-        <Service/>
-        <Portfolio/>
-        <Resume/>
-        <Blog/>
-        <Content/>
+        {/* <Service/> */}
+        <Skills/>
+        <Contact/>
     </div>
   )
 }

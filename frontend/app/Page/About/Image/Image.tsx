@@ -4,7 +4,7 @@ export default function Image() {
   return (
     <div className="relative overflow-hidden sm:block w-[100vw] sm:w-[50vw] h-[50vh] sm:h-[calc(100vh-50px)]">
       <img
-        src="/photographII.png"
+        src="/photo/photographII.png"
         alt="photograph"
         className="relative z-10 sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] 
                   2xl:h-[700px] sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px] 2xl:w-[700px]

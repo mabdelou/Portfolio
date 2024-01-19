@@ -31,20 +31,14 @@ export default function ShortNavBar() {
                 <div id="page_flore_s2" className="relative text-center text-[#FC033D] text-[15px]">
                     ABOUT
                 </div>
-                <div id="page_flore_s3" className="relative text-center text-[15px]">
+                {/* <div id="page_flore_s3" className="relative text-center text-[15px]">
                     SERVICE
+                </div> */}
+                <div id="page_flore_s3" className="relative text-center text-[15px]">
+                    SKILLS
                 </div>
                 <div id="page_flore_s4" className="relative text-center text-[15px]">
-                    PORTFOLIO
-                </div>
-                <div id="page_flore_s5" className="relative text-center text-[15px]">
-                    RESUME
-                </div>
-                <div id="page_flore_s6" className="relative text-center text-[15px]">
-                    BLOG
-                </div>
-                <div id="page_flore_s7" className="relative text-center text-[15px]">
-                    CONTENT
+                    CONTACT
                 </div>
                 <div className="relative flex pt-[0.5vh] space-x-[1vw] text-[10px] w-[50px] mx-auto">
                     <div className="relative">
