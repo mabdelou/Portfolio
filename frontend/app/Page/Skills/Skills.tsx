@@ -10,35 +10,18 @@ export default function Skills() {
     let elem = 0;
     let isAnimating = false;
     const Parrent =  document.getElementById('skill_scroll');
-    const interval = setInterval(()=>
-    {
-      if(isAnimating)
-        return ;
-      startAnimation(`skills_Scroll 13s linear infinite`);
-    },3000);
-    function startAnimation(animationName: string)
-    {
-      if(!Parrent)
-        return;
-
-      isAnimating = true;
-      Parrent.style.animation = animationName;
-      Parrent.addEventListener('animationend', AnimationEnded);
-    }
-    
-    function AnimationEnded()
-    {
-      if(!Parrent)
-        return;
-      isAnimating = false;
-      Parrent.removeEventListener('animationend', AnimationEnded);
-    }
+    if(Parrent)
+      Parrent.style.animation = "skills_Scroll 13s linear infinite";
   },[]);
 
   return (
     <div className="relative ">
-      <div id="skill_scroll" className="relative flex w-[calc(400px*13)] h-[100vh] bg-[#E5ECF1]">
-        <div id="skill_partI" className="relative flex w-[calc(400px*13)] h-[100vh]">
+      <div id="skill_scroll" className="relative flex w-[calc(400px*17)] h-[100vh] bg-fixed bg-clip-border bg-no-repeat bg-[url('/photo/photo_for_skills_part_no_color.png')] ">
+        <div id="skill_partI" className="relative flex w-[calc(400px*17)] h-[100vh]">
+          <img src="/logo/10.png" className='relative w-[400px] h-[200px] top-1/2 transform -translate-y-1/2'/>
+          <img src="/logo/11.png" className='relative w-[400px] h-[200px] top-1/2 transform -translate-y-1/2'/>
+          <img src="/logo/12.png" className='relative w-[400px] h-[200px] top-1/2 transform -translate-y-1/2'/>
+          <img src="/logo/13.png" className='relative w-[400px] h-[200px] top-1/2 transform -translate-y-1/2'/>
           <img src="/logo/1.png" className='relative w-[400px] h-[200px] top-1/2 transform -translate-y-1/2'/>
           <img src="/logo/2.png" className='relative w-[400px] h-[200px] top-1/2 transform -translate-y-1/2'/>
           <img src="/logo/3.png" className='relative w-[400px] h-[200px] top-1/2 transform -translate-y-1/2'/>
