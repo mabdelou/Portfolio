@@ -25,10 +25,10 @@ export default function ShortNavBar() {
                 X
             </button>
             <div id="SNBContent" className="relative block space-y-[15px] mx-auto w-[auto] h-[auto]">
-                <div id="page_flore_s1" className="relative text-center text-[15px]">
+                <div id="page_flore_s1" className="relative text-center text-[#FC033D] text-[15px]">
                     HOME
                 </div>
-                <div id="page_flore_s2" className="relative text-center text-[#FC033D] text-[15px]">
+                <div id="page_flore_s2" className="relative text-center text-[15px]">
                     ABOUT
                 </div>
                 {/* <div id="page_flore_s3" className="relative text-center text-[15px]">

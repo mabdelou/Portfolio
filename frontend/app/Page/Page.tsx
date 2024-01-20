@@ -75,8 +75,8 @@ export default function Page() {
   },[]);
   return (
     <div id="Parrent" className="relative w-[100vw] h-[400vh]">
-        <About/>
         <Home/>
+        <About/>
         {/* <Service/> */}
         <Skills/>
         <Contact/>
