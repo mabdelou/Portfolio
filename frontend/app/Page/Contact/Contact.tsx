@@ -1,5 +1,22 @@
 
 
+const Display = () => 
+{
+  const hide = document.getElementById("Contact-Info");
+  const dis = document.getElementById("Contact-Message");
+  const nxt_btn = document.getElementById("Contact-Next");
+  const snd_btn = document.getElementById("Contact-Send-Msg");
+
+  if(hide && dis && nxt_btn && snd_btn)
+  {
+    hide.style.display = "none";
+    dis.style.display = "block";
+    nxt_btn.style.display = "none";
+    snd_btn.style.display = "block";
+
+  }
+};
+
 export default function Contact() {
   return (
     <div className="relative ">
@@ -43,32 +60,37 @@ export default function Contact() {
         </div>
         <div className="relative  w-[calc(100vw-20px)] h-[calc((100vh-50px)-320px)] mt-[10px] mx-auto bg-[#d3d9de] rounded-lg">
           <div className="relative flex w-[100%] h-[75%] top-[10%]">
-            <div className="relative w-[50%] h-[100%] space-y-2 ">
-              <p className="ml-[65px]">
+            <div id="Contact-Info" className="relative w-[75%] sm:w-[50%] h-[100%] space-y-2 mx-auto">
+              <p className="text-center">
                 First Name:
               </p>
-              <div className="relative bg-[#E5ECF1] w-[90%] h-[35px] ml-[50px] rounded-md"></div>
-              <p className="ml-[65px]">
+              <div className="relative bg-[#E5ECF1] w-[90%] h-[35px] mx-auto rounded-md"></div>
+              <p className="text-center">
                 Your Email:
               </p>
-              <div className="relative bg-[#E5ECF1] w-[90%] h-[35px] ml-[50px] rounded-md"></div>
-              <p className="ml-[65px]">
+              <div className="relative bg-[#E5ECF1] w-[90%] h-[35px] mx-auto rounded-md"></div>
+              <p className="text-center">
                 Your Subject:
               </p >
-              <div className="relative bg-[#E5ECF1] w-[90%] h-[35px] ml-[50px] rounded-md"></div>
+              <div className="relative bg-[#E5ECF1] w-[90%] h-[35px] mx-auto rounded-md"></div>
             </div>
-            <div className="relative w-[50%] h-[100%] ]">
-              <p className="ml-[15px] ">
+            <div id="Contact-Message" className="relative hidden sm:block w-[75%] sm:w-[50%] h-[100%] mx-auto">
+              <p className="text-center">
                 Your Message:
               </p>
-              <div className="relative w-[calc(100%-10px)] h-[90%] bg-[#E5ECF1] rounded-md"></div>
+              <div className="relative w-[calc(100%-10px)] h-[90%] bg-[#E5ECF1] rounded-md mx-auto"></div>
             </div>
           </div>
-          <div className="relative w-[200px] h-[40px] bg-[#FC033D] mx-auto mt-[50px] rounded-lg">
-            <p className=" W-[100px] h-[25px] text-center text-[#E5ECF1] text-[15px] font-black">
+          <button id="Contact-Next" className="relative block sm:hidden w-[200px] h-[40px] bg-[#FC033D] mx-auto mt-[50px] rounded-lg">
+            <p className=" relative W-[100px] h-[25px] text-center text-[#E5ECF1] text-[15px] font-black" onClick={()=>{Display();}}>
+              Next
+            </p>
+          </button>
+          <button id="Contact-Send-Msg" className="relative hidden sm:block  w-[200px] h-[40px] bg-[#FC033D] mx-auto mt-[50px] rounded-lg">
+            <p className=" relative W-[100px] h-[25px] text-center text-[#E5ECF1] text-[15px] font-black">
               SEND MESSAGE
             </p>
-          </div>
+        </button>
         </div>
       </div>
     </div>

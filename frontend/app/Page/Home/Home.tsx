@@ -51,7 +51,7 @@ export default function Home() {
     }
   },[]);
   return (
-    <div className="relative ">
+    <div id="Home" className="relative ">
       <div id="home_scroll" className="relative flex w-[300vw] h-[calc(100vh-50px)] mt-[50px] bg-[#E5ECF1]">
         <div className="relative bg-center bg-no-repeat bg-cover  bg-[url('/photo/photo_of_designer_no_color.png')] w-[100vw] h-[calc(100vh-50px)]">
           <p className="absolute opacity-65 text-black right-1/2 top-1/2  transform -translate-y-1/2  translate-x-1/2 text-[50px] sm:text-[75px] md:text-[100px] lg:text-[125px] xl:text-[150px] 2xl:text-[150px] font-black">

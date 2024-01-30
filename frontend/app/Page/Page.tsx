@@ -30,12 +30,12 @@ export default function Page() {
       {
         floor++;
         startAnimation(`Scroll_down_${floor} 3s 1 forwards`);
-        console.log("down "+floor);
+        // console.log("down "+floor);
       }
       else if (deltaY < 0 && Parrent && floor > 0)
       {
         startAnimation(`Scroll_up_${floor} 3s 1 forwards`);
-        console.log("up "+floor);
+        // console.log("up "+floor);
         floor--;
       }
       for(let a=0;a<4;a++)
