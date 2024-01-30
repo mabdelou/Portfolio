@@ -8,12 +8,14 @@ import Contact from "./Contact/Contact";
 import { useEffect, useState } from 'react';
 import '/app/Page/Style/Style.css'
 
-
-
+// export const SetFloor = (flr:number)=>
+// {
+//   floor = flr;
+// };
 export default function Page() {
   useEffect(()=>
   {
-    let floor = 0;
+    let floor:number = 0;
     let isAnimating = false;
     const Parrent =  document.getElementById('Parrent');
 
@@ -22,7 +24,6 @@ export default function Page() {
     function handleScroll(event: WheelEvent)
     {
       const deltaY = event.deltaY;
-
       if(isAnimating)
         return ;
 
