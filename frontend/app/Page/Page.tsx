@@ -5,17 +5,15 @@ import About from "./About/About";
 import Service from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
-import { useEffect, useState } from 'react';
+import { useEffect, useState,useContext } from 'react';
 import '/app/Page/Style/Style.css'
+import { PageContext,FloorContextType, GetFloorContext } from "../page";
 
-// export const SetFloor = (flr:number)=>
-// {
-//   floor = flr;
-// };
 export default function Page() {
+  let Data:FloorContextType = GetFloorContext();
+
   useEffect(()=>
   {
-    let floor:number = 0;
     let isAnimating = false;
     const Parrent =  document.getElementById('Parrent');
 
@@ -27,23 +25,23 @@ export default function Page() {
       if(isAnimating)
         return ;
 
-      if (deltaY > 0 && Parrent && floor < 4)
+      if (deltaY > 0 && Parrent && Data.Floor < 4)
       {
-        floor++;
-        startAnimation(`Scroll_down_${floor} 3s 1 forwards`);
-        // console.log("down "+floor);
+        Data.setFloor(Data.Floor++);
+        startAnimation(`Scroll_down_${Data.Floor} 3s 1 forwards`);
+        console.log("down "+Data.Floor);
       }
-      else if (deltaY < 0 && Parrent && floor > 0)
+      else if (deltaY < 0 && Parrent && Data.Floor > 0)
       {
-        startAnimation(`Scroll_up_${floor} 3s 1 forwards`);
-        // console.log("up "+floor);
-        floor--;
+        startAnimation(`Scroll_up_${Data.Floor} 3s 1 forwards`);
+        console.log("up "+Data.Floor);
+        Data.setFloor(Data.Floor--);
       }
       for(let a=0;a<4;a++)
       {
         const b = document.getElementById(`page_flore_${a+1}`);
         const b1 = document.getElementById(`page_flore_s${a+1}`);
-        if(b && b1 && a == floor)
+        if(b && b1 && a == Data.Floor)
         {
           b.style.color = "#FC033D";
           b1.style.color = "#FC033D";
