@@ -16,7 +16,7 @@ export default function Page() {
   {
     let isAnimating = false;
     const Parrent =  document.getElementById('Parrent');
-
+    console.log("enter here I"+Data.Floor);
     if(Parrent)
       Parrent.addEventListener('wheel', handleScroll);
     function handleScroll(event: WheelEvent)
@@ -24,7 +24,7 @@ export default function Page() {
       const deltaY = event.deltaY;
       if(isAnimating)
         return ;
-
+      console.log("enter hereII"+Data.Floor);
       if (deltaY > 0 && Parrent && Data.Floor < 4)
       {
         Data.setFloor(Data.Floor++);
@@ -53,6 +53,7 @@ export default function Page() {
         }  
       }
     }
+
     function startAnimation(animationName: string)
     {
       if(!Parrent)
@@ -72,6 +73,7 @@ export default function Page() {
       Parrent.removeEventListener('animationend', AnimationEnded);
     }
   },[]);
+
   return (
     <div id="Parrent" className="relative w-[100vw] h-[400vh]">
         <Home/>

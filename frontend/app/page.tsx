@@ -8,10 +8,10 @@ import PhoneNavBar from './PhoneNavBar/PhoneNavBar';
 
 export interface FloorContextType
 {
-  Floor: any;
+  Floor: number;
   setFloor: Dispatch<SetStateAction<{}>>;
 }
-const Data: FloorContextType = {Floor:{},setFloor: () => {}}
+const Data: FloorContextType = {Floor:0,setFloor: () => {}}
 const UserContext = createContext<FloorContextType>(Data);
 
 export const PageContext = createContext({});

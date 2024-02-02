@@ -12,7 +12,7 @@ const GoTo = (Target:number):number =>
 
   if(Parrent)
     Parrent.style.animation = `GoTo_${Target} 0s 1 forwards`;
-  return Target;
+  return(Target-1);
 }
 
 export default function Parts() {
