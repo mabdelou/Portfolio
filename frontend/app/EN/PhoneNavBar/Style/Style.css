@@ -1,0 +1,22 @@
+@keyframes display_nb
+{
+    0%{width: 0px;display:none;}
+    100%{width: 100px;display:block;}
+}
+@keyframes close_nb
+{
+    0%{width: 100px;display:block;}
+    100%{width: 0px;display:none;}
+}
+
+
+@keyframes show_context
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes hide_context
+{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
