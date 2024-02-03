@@ -1,6 +1,8 @@
 'use client'
 
+import { GoTo } from '@/app/Navbar/Parts/Parts';
 import '/app/PhoneNavBar/Style/Style.css'
+import { Data } from '@/app/page';
 
 export const Close = () =>
 {
@@ -25,19 +27,19 @@ export default function ShortNavBar() {
                 X
             </button>
             <div id="SNBContent" className="relative block space-y-[15px] mx-auto w-[auto] h-[auto]">
-                <div id="page_flore_s1" className="relative text-center text-[#FC033D] text-[15px]">
+                <div id="page_flore_s1" onClick={()=>{Data.SetFloor(GoTo(1));}} className="relative cursor-pointer text-center text-[#FC033D] text-[15px]">
                     HOME
                 </div>
-                <div id="page_flore_s2" className="relative text-center text-[15px]">
+                <div id="page_flore_s2" onClick={()=>{Data.SetFloor(GoTo(2));}} className="relative cursor-pointer text-center text-[15px]">
                     ABOUT
                 </div>
                 {/* <div id="page_flore_s3" className="relative text-center text-[15px]">
                     SERVICE
                 </div> */}
-                <div id="page_flore_s3" className="relative text-center text-[15px]">
+                <div id="page_flore_s3" onClick={()=>{Data.SetFloor(GoTo(3));}} className="relative cursor-pointer text-center text-[15px]">
                     SKILLS
                 </div>
-                <div id="page_flore_s4" className="relative text-center text-[15px]">
+                <div id="page_flore_s4" onClick={()=>{Data.SetFloor(GoTo(4));}} className="relative cursor-pointer text-center text-[15px]">
                     CONTACT
                 </div>
                 <div className="relative flex pt-[0.5vh] space-x-[1vw] text-[10px] w-[50px] mx-auto">

@@ -7,7 +7,7 @@ import { FloorContextType, GetFloorContext } from '@/app/PageContext';
 import { Data } from '@/app/page';
 
 
-const GoTo = (Target:number):number =>
+export const GoTo = (Target:number):number =>
 {
   const Parrent =  document.getElementById('Parrent');
 
