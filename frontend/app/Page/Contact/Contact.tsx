@@ -19,7 +19,7 @@ const Display = () =>
 
 export default function Contact() {
   return (
-    <div className="relative ">
+    <div id="Contact" className="relative ">
       <div className="relative w-[100vw] h-[calc(100vh-50px)] mt-[50px] bg-[#E5ECF1] ">
         <div className="relative w-[100vw] h-[100px] ">
           <p className="relative top-1/2 transform -translate-y-1/2 text-center text-[#FC033D]  sm:text-[15px] md:text-[30px] lg:text-[45px] font-black">

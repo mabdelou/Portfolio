@@ -8,25 +8,27 @@
 
 
 @keyframes Scroll_down_1{0%{bottom:0vh;}100%{bottom: 100vh;}}
-@keyframes Scroll_up_1{0%{bottom: 100vh;}100%{bottom: 0vh;}}
+@keyframes Scroll_up_2{0%{bottom: 100vh;}100%{bottom: 0vh;}}
 
 @keyframes Scroll_down_2{0%{bottom:100vh;}100%{bottom: 200vh;}}
-@keyframes Scroll_up_2{0%{bottom: 200vh;}100%{bottom: 100vh;}}
+@keyframes Scroll_up_3{0%{bottom: 200vh;}100%{bottom: 100vh;}}
 
 @keyframes Scroll_down_3{0%{bottom:200vh;}100%{bottom: 300vh;}}
-@keyframes Scroll_up_3{0%{bottom: 300vh;}100%{bottom: 200vh;}}
+@keyframes Scroll_up_4{0%{bottom: 300vh;}100%{bottom: 200vh;}}
 
 @keyframes Scroll_down_4{0%{bottom:300vh;}100%{bottom: 400vh;}}
-@keyframes Scroll_up_4{0%{bottom: 400vh;}100%{bottom: 300vh;}}
+@keyframes Scroll_up_5{0%{bottom: 400vh;}100%{bottom: 300vh;}}
 
 @keyframes Scroll_down_5{0%{bottom:400vh;}100%{bottom: 500vh;}}
-@keyframes Scroll_up_5{0%{bottom: 500vh;}100%{bottom: 400vh;}}
+@keyframes Scroll_up_6{0%{bottom: 500vh;}100%{bottom: 400vh;}}
 
 @keyframes Scroll_down_6{0%{bottom:500vh;}100%{bottom: 600vh;}}
-@keyframes Scroll_up_6{0%{bottom: 600vh;}100%{bottom: 500vh;}}
+@keyframes Scroll_up_7{0%{bottom: 600vh;}100%{bottom: 500vh;}}
 
 @keyframes Scroll_down_7{0%{bottom:600vh;}100%{bottom: 700vh;}}
-@keyframes Scroll_up_7{0%{bottom: 700vh;}100%{bottom: 600vh;}}
+@keyframes Scroll_up_8{0%{bottom: 700vh;}100%{bottom: 600vh;}}
+
+
 /*---------------------------------------------------HOME--------------------------------------------------------*/
 
 
