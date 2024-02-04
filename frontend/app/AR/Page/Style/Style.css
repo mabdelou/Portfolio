@@ -32,18 +32,18 @@
 /*---------------------------------------------------HOME--------------------------------------------------------*/
 
 
-@keyframes Scroll_0{0%{right:0vW;}100%{right: 100vW;}}
+@keyframes Scroll_0{0%{left:0vW;}100%{left: 100vW;}}
 
-@keyframes Scroll_1{0%{right:100vW;}100%{right: 200vW;}}
+@keyframes Scroll_1{0%{left:100vW;}100%{left: 200vW;}}
 
-@keyframes Scroll_2{0%{right:200vW;}100%{right: 0vW;}}
+@keyframes Scroll_2{0%{left:200vW;}100%{left: 0vW;}}
 /*---------------------------------------------------SKILL--------------------------------------------------------*/
 
 
-@keyframes skills_Scroll4{0%{right:0vw;}100%{right: calc(400px*13);}}
-@keyframes skills_Scroll3{0%{right:0vw;}100%{right: calc(300px*13);}}
-@keyframes skills_Scroll2{0%{right:0vw;}100%{right: calc(200px*13);}}
-@keyframes skills_Scroll1{0%{right:0vw;}100%{right: calc(100px*13);}}
+@keyframes skills_Scroll4{0%{left:0vw;}100%{left: calc(400px*13);}}
+@keyframes skills_Scroll3{0%{left:0vw;}100%{left: calc(300px*13);}}
+@keyframes skills_Scroll2{0%{left:0vw;}100%{left: calc(200px*13);}}
+@keyframes skills_Scroll1{0%{left:0vw;}100%{left: calc(100px*13);}}
 
 
 .skills-scroll

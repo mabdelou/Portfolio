@@ -7,9 +7,9 @@ export default function Navbar() {
 
     return (
       <div className="fixed flex h-[50px] w-[100vw] z-20 bg-[#E5ECF1]">
-          <Logo/>
-          <Parts/>
           <Language/>
+          <Parts/>
+          <Logo/>
       </div>
     );
 

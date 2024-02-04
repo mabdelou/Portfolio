@@ -8,8 +8,8 @@ export default function About() {
 
     <div id="About" className="relative w-[100vw] h-[calc(100vh-50px)] mt-[50px]">
       <div className="relative  sm:flex w-[100vw] h-[calc(100vh-50px)] bg-[#E5ECF1]">
-          <Info_/>
           <Image/>
+          <Info_/>
       </div>
     </div>
   )

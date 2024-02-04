@@ -16,7 +16,7 @@ export default function Skills() {
 
   return (
     <div id="Skills" className="relative bg-fixed bg-cover bg-center bg-clip-border bg-no-repeat bg-[url('/photo/photo_for_skills_part_no_color.png')] ">
-      <div id="skill_scroll" className="relative flex w-[calc(400px*17)] h-[calc(100vh-50px] mt-[50px] skills-scroll">
+      <div id="skill_scroll" className="relative flex w-[calc(400px*17)] h-[calc(100vh-50px] ml-[calc(-100px*13)] sm:ml-[calc(-200px*13)] md:ml-[calc(-300px*13)] lg:ml-[calc(-400px*13)] mt-[50px] skills-scroll">
         <div id="skill_partI" className="relative flex w-[calc(400px*17)] h-[calc(100vh-50px)]">
           <img src="/logo/10.png" className='relative w-[100px] sm:w-[200px]  md:w-[300px] lg:w-[400px] h-[50px] sm:h-[100px] md:h-[150px] lg:h-[200px] top-1/2 transform -translate-y-1/2'/>
           <img src="/logo/11.png" className='relative w-[100px] sm:w-[200px]  md:w-[300px] lg:w-[400px] h-[50px] sm:h-[100px] md:h-[150px] lg:h-[200px] top-1/2 transform -translate-y-1/2'/>
