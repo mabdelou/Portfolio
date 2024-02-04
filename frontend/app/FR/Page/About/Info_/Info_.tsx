@@ -10,16 +10,16 @@ export default function Info_() {
         <div className="relative flex w-[auto] h-[auto]">
           <div className="relative w-[25px] h-[1px] bg-[#666666] top-[2vh]"></div>
             <p className=" relative ml-[0.5vw]">
-              HELLO
+              BONJOUR
             </p>
         </div>
         <div className="relative flex text-[10px] sm:text-[20px] md:text-[20px] lg:text-[30px] font-black pt-[2.5%] ">
-          <p className=" relative"> I’m </p>
+          <p className=" relative"> je suis </p>
           <p className=" relative ml-[0.5vw] text-[#FC033D]"> Mohammed  </p>
           <p className=" relative ml-[0.5vw]"> Abdelouafi </p>
         </div>
         <p className=" relative w-[200px] sm:w-[300px] md:w-[300px] lg:w-[450px] pt-[2.5%]">
-          I am a student at 1337 School, part of the 42 Network and UM6P. I have completed more than 20 projects with high scores.
+        Étudiant à l'école 1337, faisant partie du réseau 42 et de l'UM6P, j'ai terminé plus de 20 projets avec des scores élevés."
         </p>
         <DButton/>
       </div>

@@ -19,20 +19,20 @@ export const GoTo = (Target:number):number =>
 export default function Parts() {
   return (
     <div className="relative hidden sm:flex space-x-[2.5vw] my-auto  mx-auto">
-      <button onClick={()=>{Data.SetFloor(GoTo(4));}} id="page_flore_4" className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
-        اتصل بي
+      <button onClick={()=>{Data.SetFloor(GoTo(1));}} id="page_flore_1" className="relative text-[#FC033D] text-[10px] sm:text-xs md:text-sm lg:text-base">
+        ACCUEIL
       </button>
-      <button onClick={()=>{Data.SetFloor(GoTo(3));}} id="page_flore_3" className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
-        مهاراتي
+      <button onClick={()=>{Data.SetFloor(GoTo(2));}} id="page_flore_2" className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
+        À PROPOS
       </button>
       {/* <div id="page_flore_3" className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
         SERVICE
       </div> */}
-      <button onClick={()=>{Data.SetFloor(GoTo(2));}} id="page_flore_2" className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
-        عني
+      <button onClick={()=>{Data.SetFloor(GoTo(3));}} id="page_flore_3" className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
+        COMPETENCES
       </button>
-      <button onClick={()=>{Data.SetFloor(GoTo(1));}} id="page_flore_1" className="relative text-[#FC033D] text-[10px] sm:text-xs md:text-sm lg:text-base">
-        الصفحة الرئيسية
+      <button onClick={()=>{Data.SetFloor(GoTo(4));}} id="page_flore_4" className="relative text-[10px] sm:text-xs md:text-sm lg:text-base">
+        CONTACT
       </button>
     </div>
   )
