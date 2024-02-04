@@ -20,9 +20,9 @@ export const Close = () =>
 
 export default function ShortNavBar() {
     return (
-        <div className="relative overflow-hidden block mx-auto space-y-[25px] w-[auto] h-[auto] rounded-tl-lg">
+        <div className="relative overflow-hidden block mx-auto space-y-[25px] w-[auto] h-[auto] rounded-tr-lg">
             <button
-                    className="relative w-[25px] h-[25px] rounded-br-md bg-[#666666] text-[#E5ECF1]"
+                    className="relative w-[25px] h-[25px] rounded-bl-md ml-[75px] bg-[#666666] text-[#E5ECF1]"
                     onClick={()=>{Close();}}>
                 X
             </button>
